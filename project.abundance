@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": 1734023609024
+                    "ioValue": 1734023984457
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -43,13 +43,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.14295580110497239,
-            "y": 0.6501547987616099,
+            "x": 0.13259668508287292,
+            "y": 0.6873065015479876,
             "uniqueID": 1734023283148,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 20
+                    "ioValue": 10
                 },
                 {
                     "name": "y length",
@@ -59,36 +59,10 @@
             "description": "Creates a new rectangle."
         },
         {
-            "atomType": "ShrinkWrap",
-            "name": "Shrink Wrap",
-            "x": 0.48964088397790057,
-            "y": 0.47058823529411764,
-            "uniqueID": 1734023609024,
-            "ioValues": [
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1734023278718
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": ""
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1734023278718
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
-        },
-        {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.4060773480662983,
-            "y": 0.7306501547987616,
+            "x": 0.4116022099447514,
+            "y": 0.7430340557275541,
             "uniqueID": 1734023719758,
             "ioValues": [
                 {
@@ -113,8 +87,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.27209944751381215,
-            "y": 0.7089783281733746,
+            "x": 0.268646408839779,
+            "y": 0.6408668730650154,
             "uniqueID": 1734023732073,
             "ioValues": [
                 {
@@ -123,7 +97,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 30
+                    "ioValue": -10
                 },
                 {
                     "name": "yDist",
@@ -131,19 +105,80 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 10
+                    "ioValue": 0
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.2990331491712707,
+            "y": 0.40866873065015485,
+            "uniqueID": 1734023941669,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734023278718
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 10
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Loft",
+            "name": "Loft",
+            "x": 0.5345303867403315,
+            "y": 0.4613003095975233,
+            "uniqueID": 1734023984457,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1734023941669
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1734023719758
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1734023941669
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1734023719758
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+            "closedSelection": 0
         }
     ],
     "allConnectors": [
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1734023278718,
-            "ap2ID": 1734023609024
+            "ap2ID": 1734023941669
         },
         {
             "ap1Name": "geometry",
@@ -154,10 +189,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "Shape 2",
             "ap2Primary": false,
-            "ap1ID": 1734023609024,
-            "ap2ID": 1733608136909
+            "ap1ID": 1734023719758,
+            "ap2ID": 1734023984457
         },
         {
             "ap1Name": "geometry",
@@ -165,6 +200,20 @@
             "ap2Primary": true,
             "ap1ID": 1734023732073,
             "ap2ID": 1734023719758
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1734023941669,
+            "ap2ID": 1734023984457
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734023984457,
+            "ap2ID": 1733608136909
         }
     ],
     "unitsKey": "Inches",
