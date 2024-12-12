@@ -14,13 +14,144 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1733608136909,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1734023487514
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.14433701657458564,
+            "y": 0.3312693498452013,
+            "uniqueID": 1734023278718,
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 12
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new regular polygon. Corners are on the diameter."
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.2541436464088398,
+            "y": 0.7027863777089783,
+            "uniqueID": 1734023283148,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 20
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3701657458563536,
+            "y": 0.38390092879256965,
+            "uniqueID": 1734023296817,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734023278718
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.35428176795580113,
+            "y": 0.6718266253869969,
+            "uniqueID": 1734023300981,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734023283148
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.5303867403314917,
+            "y": 0.4860681114551083,
+            "uniqueID": 1734023487514,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1734023300981
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 1734023296817
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1734023278718,
+            "ap2ID": 1734023296817
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1734023283148,
+            "ap2ID": 1734023300981
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1734023296817,
+            "ap2ID": 1734023487514
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1734023300981,
+            "ap2ID": 1734023487514
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734023487514,
+            "ap2ID": 1733608136909
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
