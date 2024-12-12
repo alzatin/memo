@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": 1734025411325
+                    "ioValue": 1734025602698
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -25,8 +25,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.1664364640883978,
-            "y": 0.43034055727554177,
+            "x": 0.09392265193370167,
+            "y": 0.4055727554179566,
             "uniqueID": 1734023278718,
             "ioValues": [
                 {
@@ -43,8 +43,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.34599447513812154,
-            "y": 0.48916408668730654,
+            "x": 0.21616022099447516,
+            "y": 0.3374613003095975,
             "uniqueID": 1734025105716,
             "ioValues": [
                 {
@@ -61,8 +61,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.5359116022099447,
-            "y": 0.5851393188854489,
+            "x": 0.31146408839779005,
+            "y": 0.4922600619195046,
             "uniqueID": 1734025411325,
             "ioValues": [
                 {
@@ -83,6 +83,42 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.6719613259668509,
+            "y": 0.43343653250774,
+            "uniqueID": 1734025602698,
+            "ioValues": [
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1734025751082
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Assembly",
+            "unionIndex": 0
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.4295580110497238,
+            "y": 0.6563467492260062,
+            "uniqueID": 1734025751082,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734025411325
+                }
+            ],
+            "description": "Adds a Bill Of Materials tag which appears in molecules containing this atom and in the GitHub project bill of materials.",
+            "BOMitem": {
+                "BOMitemName": "long block",
+                "numberNeeded": 4,
+                "costUSD": 10,
+                "source": "www.example.com"
+            }
         }
     ],
     "allConnectors": [
@@ -102,14 +138,35 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1734025411325,
+            "ap2ID": 1734025751082
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 1734025411325,
+            "ap1ID": 1734025602698,
             "ap2ID": 1733608136909
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1734025751082,
+            "ap2ID": 1734025602698
         }
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": [],
+    "compiledBom": [
+        {
+            "BOMitemName": "long block",
+            "numberNeeded": 4,
+            "costUSD": 10,
+            "source": "www.example.com"
+        }
+    ],
     "filetypeVersion": 1
 }
