@@ -2,7 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|long block|4|$10.00|www.example.com|
-|Total: |4|$10.00| |
+|Total: |0|$0.00| |
 
- 3xCOG MSRP: $30.00
+ 3xCOG MSRP: $0.00
