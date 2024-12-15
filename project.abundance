@@ -16,54 +16,9 @@
             "uniqueID": 1733608136909,
             "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Equation",
-            "name": "x + y / 2",
-            "x": 0.1574585635359116,
-            "y": 0.5541795665634675,
-            "uniqueID": 1734300093301,
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 120
-                },
-                {
-                    "name": "y",
-                    "ioValue": 3
-                }
-            ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y / 2"
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.32044198895027626,
-            "y": 0.49535603715170284,
-            "uniqueID": 1734300132163,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 121.5
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new rectangle."
         }
     ],
-    "allConnectors": [
-        {
-            "ap1Name": "result",
-            "ap2Name": "x length",
-            "ap2Primary": false,
-            "ap1ID": 1734300093301,
-            "ap2ID": 1734300132163
-        }
-    ],
+    "allConnectors": [],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
