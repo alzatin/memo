@@ -16,6 +16,18 @@
             "uniqueID": 1733608136909,
             "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Import",
+            "name": "Import",
+            "x": 0.4401582591493571,
+            "y": 0.563467492260062,
+            "uniqueID": 1734302168700,
+            "ioValues": [],
+            "description": "Import Atom, let's you choose a type of file to import and use in your design.",
+            "fileName": "frieze_1 v2.stl",
+            "type": "STL",
+            "SVGwidth": 10
         }
     ],
     "allConnectors": [],
