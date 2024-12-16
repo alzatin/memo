@@ -14,14 +14,19 @@
             "x": 0.9675414364640883,
             "y": 0.5139318885448917,
             "uniqueID": 1733608136909,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1734309537591
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.5707220573689417,
-            "y": 0.5263157894736842,
+            "x": 0.5351137487636004,
+            "y": 0.7863777089783281,
             "uniqueID": 1734309529755,
             "ioValues": [
                 {
@@ -69,6 +74,13 @@
             "ap2Primary": false,
             "ap1ID": 1734309537591,
             "ap2ID": 1734309529755
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734309537591,
+            "ap2ID": 1733608136909
         }
     ],
     "unitsKey": "Inches",
