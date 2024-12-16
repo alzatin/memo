@@ -14,43 +14,8 @@
             "x": 0.9675414364640883,
             "y": 0.5139318885448917,
             "uniqueID": 1733608136909,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1734309537591
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Export",
-            "name": "Export",
-            "x": 0.5351137487636004,
-            "y": 0.7863777089783281,
-            "uniqueID": 1734309529755,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1734309537591
-                },
-                {
-                    "name": "Resolution (dpi)",
-                    "ioValue": 72
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "circle"
-                },
-                {
-                    "name": "File Type",
-                    "ioValue": "SVG"
-                }
-            ],
-            "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": null,
-            "resolution": 72,
-            "importIndex": 0,
-            "fileName": null
         },
         {
             "atomType": "Circle",
@@ -65,6 +30,22 @@
                 }
             ],
             "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Readme",
+            "name": "README",
+            "x": 0.47576656775469833,
+            "y": 0.4024767801857585,
+            "uniqueID": 1734310348872,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734309537591
+                }
+            ],
+            "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
+            "readmeText": "This is a 5\" circle",
+            "global": true
         }
     ],
     "allConnectors": [
@@ -73,14 +54,7 @@
             "ap2Name": "geometry",
             "ap2Primary": false,
             "ap1ID": 1734309537591,
-            "ap2ID": 1734309529755
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1734309537591,
-            "ap2ID": 1733608136909
+            "ap2ID": 1734310348872
         }
     ],
     "unitsKey": "Inches",
