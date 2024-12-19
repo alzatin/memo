@@ -46,6 +46,17 @@
             "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
             "readmeText": "This is a 5\" circle",
             "global": true
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.3272561531449407,
+            "y": 0.6687306501547987,
+            "uniqueID": 1734649026573,
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "AGUAFINA",
+            "selectedFontIndex": 5
         }
     ],
     "allConnectors": [
