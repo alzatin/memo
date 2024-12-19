@@ -50,8 +50,8 @@
         {
             "atomType": "Text",
             "name": "Text",
-            "x": 0.3272561531449407,
-            "y": 0.6687306501547987,
+            "x": 0.381950774840474,
+            "y": 0.6377708978328174,
             "uniqueID": 1734649026573,
             "ioValues": [],
             "description": "Creates a new text sketch.",
