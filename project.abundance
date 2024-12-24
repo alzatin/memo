@@ -70,7 +70,7 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 9
+                    "ioValue": 8
                 },
                 {
                     "name": "y length",
@@ -117,14 +117,14 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y - 1",
-            "x": 0.21607142857142858,
-            "y": 0.6360759493670887,
+            "name": "x + y - 3",
+            "x": 0.2151785714285714,
+            "y": 0.6424050632911392,
             "uniqueID": 1735060816789,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 3
+                    "ioValue": 4
                 },
                 {
                     "name": "y",
@@ -132,7 +132,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y - 1"
+            "currentEquation": "x + y - 3"
         },
         {
             "atomType": "Equation",
