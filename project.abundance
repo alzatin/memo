@@ -74,7 +74,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 4
+                    "ioValue": 5
                 }
             ],
             "description": "Creates a new rectangle."
@@ -136,7 +136,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y + z",
+            "name": "x + y + z + 1",
             "x": 0.32857142857142857,
             "y": 0.7943037974683544,
             "uniqueID": 1735060898425,
@@ -155,7 +155,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y + z"
+            "currentEquation": "x + y + z + 1"
         }
     ],
     "allConnectors": [
