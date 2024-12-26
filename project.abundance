@@ -70,11 +70,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 7
+                    "ioValue": 56
                 },
                 {
                     "name": "y length",
-                    "ioValue": 7
+                    "ioValue": 6
                 }
             ],
             "description": "Creates a new rectangle."
@@ -117,22 +117,22 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + 5",
-            "x": 0.22109533468559836,
-            "y": 0.629746835443038,
+            "name": "x + 55",
+            "x": 0.2150101419878296,
+            "y": 0.6075949367088608,
             "uniqueID": 1735060816789,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 2
+                    "ioValue": 1
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + 5"
+            "currentEquation": "x + 55"
         },
         {
             "atomType": "Equation",
-            "name": "x + y + 4",
+            "name": "x + y + 3",
             "x": 0.32454361054766734,
             "y": 0.8037974683544303,
             "uniqueID": 1735060898425,
@@ -147,7 +147,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y + 4"
+            "currentEquation": "x + y + 3"
         }
     ],
     "allConnectors": [
