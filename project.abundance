@@ -11,7 +11,7 @@
         },
         {
             "name": "name2",
-            "ioValue": 21
+            "ioValue": 20
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -34,8 +34,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.2895805142083897,
-            "y": 0.31715210355987056,
+            "x": 0.35306122448979593,
+            "y": 0.255663430420712,
             "uniqueID": 1734309537591,
             "ioValues": [
                 {
@@ -68,13 +68,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.4215155615696888,
-            "y": 0.5889967637540453,
+            "x": 0.3520408163265306,
+            "y": 0.5792880258899676,
             "uniqueID": 1735060169803,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 12
+                    "ioValue": 16
                 },
                 {
                     "name": "y length",
@@ -121,22 +121,18 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y",
+            "name": "x + 2",
             "x": 0.2307171853856563,
             "y": 0.7508090614886731,
             "uniqueID": 1735060816789,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 9
-                },
-                {
-                    "name": "y",
-                    "ioValue": 3
+                    "ioValue": 14
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y"
+            "currentEquation": "x + 2"
         },
         {
             "atomType": "GitHubMolecule",
@@ -1018,6 +1014,13 @@
             "ap2Primary": false,
             "ap1ID": 1735060550973,
             "ap2ID": 1735060169803
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1735060550973,
+            "ap2ID": 1735060816789
         },
         {
             "ap1Name": "result",
