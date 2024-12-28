@@ -8,6 +8,10 @@
         {
             "name": "name1",
             "ioValue": 10
+        },
+        {
+            "name": "name2",
+            "ioValue": 20
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -30,13 +34,13 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.5383928571428571,
-            "y": 0.21835443037974683,
+            "x": 0.32070365358592695,
+            "y": 0.3300970873786408,
             "uniqueID": 1734309537591,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "description": "Creates a new circle."
@@ -118,8 +122,8 @@
         {
             "atomType": "Equation",
             "name": "x + 55",
-            "x": 0.21632653061224488,
-            "y": 0.6051779935275081,
+            "x": 0.2733423545331529,
+            "y": 0.7281553398058253,
             "uniqueID": 1735060816789,
             "ioValues": [
                 {
@@ -963,6 +967,16 @@
             "unitsKey": "Inches",
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name2",
+            "x": 0.04,
+            "y": 0.3883495145631068,
+            "uniqueID": 1735420597585,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
@@ -1007,6 +1021,13 @@
             "ap2Primary": false,
             "ap1ID": 1735060816789,
             "ap2ID": 1735060169803
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1735420597585,
+            "ap2ID": 1734309537591
         }
     ],
     "unitsKey": "Inches",
