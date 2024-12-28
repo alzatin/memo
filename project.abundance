@@ -7,11 +7,11 @@
     "ioValues": [
         {
             "name": "name1",
-            "ioValue": 10
+            "ioValue": 14
         },
         {
             "name": "name2",
-            "ioValue": 20
+            "ioValue": 21
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -34,8 +34,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.32070365358592695,
-            "y": 0.3300970873786408,
+            "x": 0.2895805142083897,
+            "y": 0.31715210355987056,
             "uniqueID": 1734309537591,
             "ioValues": [
                 {
@@ -68,17 +68,17 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.4508928571428571,
-            "y": 0.4525316455696203,
+            "x": 0.4215155615696888,
+            "y": 0.5889967637540453,
             "uniqueID": 1735060169803,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 56
+                    "ioValue": 12
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
+                    "ioValue": 14
                 }
             ],
             "description": "Creates a new rectangle."
@@ -121,18 +121,22 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + 55",
-            "x": 0.2733423545331529,
-            "y": 0.7281553398058253,
+            "name": "x + y",
+            "x": 0.2307171853856563,
+            "y": 0.7508090614886731,
             "uniqueID": 1735060816789,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 1
+                    "ioValue": 9
+                },
+                {
+                    "name": "y",
+                    "ioValue": 3
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + 55"
+            "currentEquation": "x + y"
         },
         {
             "atomType": "GitHubMolecule",
@@ -972,7 +976,7 @@
             "atomType": "Input",
             "name": "name2",
             "x": 0.04,
-            "y": 0.3883495145631068,
+            "y": 0.3915857605177993,
             "uniqueID": 1735420597585,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -1010,10 +1014,10 @@
         },
         {
             "ap1Name": "number or geometry",
-            "ap2Name": "x",
+            "ap2Name": "y length",
             "ap2Primary": false,
             "ap1ID": 1735060550973,
-            "ap2ID": 1735060816789
+            "ap2ID": 1735060169803
         },
         {
             "ap1Name": "result",
